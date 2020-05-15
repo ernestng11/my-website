@@ -1,0 +1,572 @@
+/* ------------------------------------
+        Default Values:
+        Font family:    Roboto
+
+        Greenish Blue:  #34c6d3 (Buttons, Icons, links, lines and background
+        Steel gray:     #41464b headings
+        blue bayoux:    #64707b paragraphs
+        white:          #fff text with black blackgrounds
+        black:          #000
+---------------------------------------*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #41464b;
+
+    /*text-transform: uppercase;*/
+}
+
+/* ------------------------------------
+                HOME
+---------------------------------------*/
+#home {
+    height: 100%;
+}
+
+#about-btn a {
+    font-size: 20px;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/my-home-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /*text-align: center;*/
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 20px 0 20px 0;
+}
+
+/* ------------------------------------
+            PARALLAX (Generic)
+---------------------------------------*/
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-parallax-about {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+/* ------------------------------------
+            BUTTONS (Generic)
+---------------------------------------*/
+.btn-general {
+    border-color: #fff;
+    border-width: 1.5px;
+    border-radius: 0;
+    padding: 12px 22px 12px 22px;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.btn-green {
+    border-color: #56c6ea;
+    color: #56c6ea;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #56c6ea;
+    color: #fff;
+}
+
+.btn-contact {
+    border-color: #fff;
+    border-width: 1px;
+    border-radius: 0;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    text-transform: lowercase;
+    margin-bottom: 40px;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+/* ------------------------------------
+                ANIMATION
+---------------------------------------*/
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: 0.5s;
+}
+
+#home-cover {
+    animation-delay: 0.1s;
+}
+
+#home-heading {
+    animation-delay: 0.5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+}
+
+/* ------------------------------------
+                CONTENT
+---------------------------------------*/
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #56c6ea;
+    margin: 0 auto 30px auto;
+}
+
+/* ------------------------------------
+                ABOUT
+---------------------------------------*/
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/my-image-4.JPG);
+    border-left: 200px solid #fff;
+    border-top: 700px solid transparent;
+}
+
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------
+               PROJECTS
+---------------------------------------*/
+.project-item {
+    padding: 0px 0 20px 0;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.project-item-icon i {
+    color: #56c6ea;
+    float: left;
+    padding: 15px;
+    margin-right: 15px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.project-item:hover .project-item-icon i {
+    color: #fff;
+    background-color: #56c6ea;
+}
+
+.project-item-title h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 0 0 20px 0;
+}
+
+.project-item-desc p {
+    margin: 0;
+    padding-left: 90px;
+
+}
+
+/* ------------------------------------
+                 WORK
+---------------------------------------*/
+.work-company {
+    margin: 0 27px;
+}
+
+.work-company-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.work-company-name {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+h4.work-company-role {
+    color: #56c6ea;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+/* ------------------------------------
+            SOCIAL ICONS
+---------------------------------------*/
+.social-list {
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    font-size: 18px;
+}
+
+.icon-gray i {
+    color: #41464b;
+}
+
+.icon-white i {
+    color: #fff;
+}
+
+.icon-blue i {
+    color: #56c6ea;
+}
+
+.social-icon i:hover {
+    color: #56c6ea;
+}
+
+/* ------------------------------------
+            TESTIMONIALS
+---------------------------------------*/
+#testimonials-cover {
+    background-image: url("../img/bg-testimonials.jpg");
+}
+
+#testimonials .content-box {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#employer-testimonials {
+    padding: 30px 0;
+}
+
+.testimonial img {
+    max-width: 120px;
+    margin: 0 auto 0 auto;
+}
+
+.testimonial blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+    position: relative;
+}
+
+.testimonial p {
+    color: #fff;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 0;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 0;
+}
+
+.testimonial-author p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.testimonial-author p strong {
+    display: block;
+}
+
+/* ------------------------------------
+                SKILLS
+---------------------------------------*/
+#skills-cover {
+    background-image: url("../img/bg-stats.jpg");
+}
+
+#skills .content-box {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.skills-item {
+    padding: 100px 0;
+}
+
+.skills-item i {
+    color: #56c6ea;
+}
+
+.skills-item h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.skills-item p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* ------------------------------------
+                CONTACT
+---------------------------------------*/
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+#contact-left h3,
+#contact-right h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    background-image: url("../img/world-map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .social-list i {
+    color: #fff;
+}
+
+#contact-left strong {
+    font-size: 20px;
+}
+
+address {
+    color: #fff;
+    font-size: 20px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: white;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* ------------------------------------
+                FOOTER
+---------------------------------------*/
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #56c6ea;
+}
+
+/* ------------------------------------
+             NAVIGATION
+---------------------------------------*/
+.navbar {
+    padding: 20px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.page-top-nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+}
+
+.page-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
+    background: none;
+    color: #56c6ea;
+}
+
+.navbar-toggle {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-collapse {
+    max-height: none !important;
+}
+
+.page-top-nav ul.navbar-nav>li.active>a {
+    color: #56c6ea;
+}
