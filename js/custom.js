@@ -11,7 +11,7 @@ $(function () {
     $("#work-companies").owlCarousel({
         items: 1,
         autoplay: true,
-        smartSpeed: 2000,
+        smartSpeed: 2500,
         loop: true,
         autoPlayHoverPause: true
     });
@@ -23,7 +23,7 @@ $(function () {
     $("#employer-testimonials").owlCarousel({
         items: 1,
         autoplay: true,
-        smartSpeed: 2000,
+        smartSpeed: 2500,
         loop: true,
         autoPlayHoverPause: true
     });
